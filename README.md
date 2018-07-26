@@ -45,5 +45,5 @@ You are free to share and adapt the materials only for non-commercial purposes a
 
 ART:
 
-The Life Support, Logistics, and Rover Icons are copyright All Rights Reserved by Bob Palmer (RoverDude) and are used by permission.
+The USI Icons are copyright All Rights Reserved by Bob Palmer (RoverDude) and are used by permission.
 
