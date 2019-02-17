@@ -1,0 +1,3364 @@
+{					
+					
+	//DX(row) = 107				
+	//DY(row) = 55				
+					
+	// ==========================================				
+	// Reposition Stock & Community Tech Tree Nodes				
+	// ==========================================				
+					
+	@RDNode:HAS[#id[actuators]]				
+	{				
+		//pos = -2551, 2250,-1			
+		@pos = -2551, 2250,-1			
+					
+		//cost = 50			
+		@cost = 50			
+					
+		//nodeName = Node4_actuators			
+		@nodeName = Node4_actuators			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = generalConstruction		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[advActuators]]				
+	{				
+		//pos = -2123, 2250,-1			
+		@pos = -2123, 2250,-1			
+					
+		//cost = 125			
+		@cost = 125			
+					
+		//nodeName = Node5_advActuators			
+		@nodeName = Node5_advActuators			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = actuators		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[automation]]				
+	{				
+		//pos = -1802, 2250,-1			
+		@pos = -1802, 2250,-1			
+					
+		//cost = 200			
+		@cost = 200			
+					
+		//nodeName = Node6_automation			
+		@nodeName = Node6_automation			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = advActuators		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+		Parent			
+		{			
+			parentID = computers		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[mechatronics]]				
+	{				
+		//pos = -1481, 2250,-1			
+		@pos = -1481, 2250,-1			
+					
+		//cost = 375			
+		@cost = 375			
+					
+		//nodeName = Node7_mechatronics			
+		@nodeName = Node7_mechatronics			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = automation		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+		Parent			
+		{			
+			parentID = advComputers		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[experimentalActuators]]				
+	{				
+		//pos = -1374, 2250,-1			
+		@pos = -1374, 2250,-1			
+					
+		//cost = 495			
+		@cost = 495			
+					
+		//nodeName = Node8_experimentalActuators			
+		@nodeName = Node8_experimentalActuators			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = mechatronics		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[artificialIntelligence]]				
+	{				
+		//pos = -1267, 2250,-1			
+		@pos = -1267, 2250,-1			
+					
+		//cost = 750			
+		@cost = 750			
+					
+		//nodeName = Node9_artificialIntelligence			
+		@nodeName = Node9_artificialIntelligence			
+					
+		//title = #LOC_ETT_artificialIntelligence_title			
+		@title #LOC_ETT_artificialIntelligence_title			
+					
+		//desc = #LOC_ETT_artificialIntelligence_description			
+		@desc = #LOC_ETT_artificialIntelligence_description		
+
+		//icon = RDicon_robotics
+		@icon = RDicon_robotics
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = experimentalActuators		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+		Parent			
+		{			
+			parentID = experimentalComputers		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[orbitalAssembly]]				
+	{				
+		//pos = -1160, 2195,-1			
+		@pos = -1160, 2195,-1			
+					
+		//cost = 1000			
+		@cost = 1000			
+					
+		//nodeName = Node10_orbitalAssembly			
+		@nodeName = Node10_orbitalAssembly			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = advDocking		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+		Parent			
+		{			
+			parentID = artificialIntelligence		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[shortTermHabitation]]				
+	{				
+		//pos = -1481, 2140,-1			
+		@pos = -1481, 2140,-1			
+					
+		//cost = 375			
+		@cost = 375			
+			
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = spaceStationTech		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[longTermHabitation]]				
+	{				
+		//pos = -1267, 2140,-1			
+		@pos = -1267, 2140,-1			
+					
+		//cost = 750			
+		@cost = 750			
+					
+		//nodeName = Node9_longTermHabitation			
+		@nodeName = Node9_longTermHabitation				
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = shortTermHabitation	
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[orbitalMegastructures]]				
+	{				
+		//pos = -839, 2140,-1			
+		@pos = -839, 2140,-1			
+					
+		//cost = 2250			
+		@cost = 2250			
+					
+		//nodeName = Node13_orbitalMegastructures			
+		@nodeName = Node13_orbitalMegastructures			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = longTermHabitation		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+		Parent			
+		{			
+			parentID = orbitalAssembly		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[offworldManufacturing]]				
+	{				
+		//pos = -625, 2085,-1			
+		@pos = -625, 2085,-1			
+					
+		//cost = 3500			
+		@cost = 3500			
+					
+		//nodeName = Node15_offworldManufacturing			
+		@nodeName = Node15_offworldManufacturing			
+					
+		//title = #LOC_ETT_offworldManufacturing_title			
+		@title #LOC_ETT_offworldManufacturing_title				
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = colonization		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[colonization]]				
+	{				
+		//pos = -732, 2030,-1			
+		@pos = -732, 2030,-1			
+					
+		//cost = 2750			
+		@cost = 2750			
+					
+		//nodeName = Node14_colonization			
+		@nodeName = Node14_colonization			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = longTermHabitation		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+		Parent			
+		{			
+			parentID = artificialIntelligence		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+		Parent			
+		{			
+			parentID = advOffworldMining		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[advColonization]]				
+	{				
+		//pos = -518, 2030,-1			
+		@pos = -518, 2030,-1			
+					
+		//cost = 4000			
+		@cost = 4000			
+					
+		//nodeName = Node16_advColonization			
+		@nodeName = Node16_advColonization			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = colonization		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+		Parent			
+		{			
+			parentID = advLogistics		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+		Parent			
+		{			
+			parentID = hydroponics		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[engineering101]]				
+	{				
+		//pos = -3300, 1975,-1			
+		@pos = -3300, 1975,-1			
+					
+		//cost = 0			
+		@cost = 0			
+					
+		//nodeName = Node0_engineering101			
+		@nodeName = Node0_engineering101			
+					
+		//title = #LOC_ETT_engineering101_title			
+		@title #LOC_ETT_engineering101_title			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+	}				
+	@RDNode:HAS[#id[generalConstruction]]				
+	{				
+		//pos = -3086, 1975,-1			
+		@pos = -3086, 1975,-1			
+					
+		//cost = 5			
+		@cost = 5			
+					
+		//nodeName = Node2_generalConstruction			
+		@nodeName = Node2_generalConstruction			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = engineering101		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[advConstruction]]				
+	{				
+		//pos = -2872, 1975,-1			
+		@pos = -2872, 1975,-1			
+					
+		//cost = 15			
+		@cost = 15			
+					
+		//nodeName = Node3_advConstruction			
+		@nodeName = Node3_advConstruction			
+					
+		//title = #LOC_ETT_advConstruction_title			
+		@title #LOC_ETT_advConstruction_title					
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = generalConstruction		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[specializedConstruction]]				
+	{				
+		//pos = -2551, 1975,-1			
+		@pos = -2551, 1975,-1			
+					
+		//cost = 50			
+		@cost = 50			
+					
+		//nodeName = Node4_specializedConstruction			
+		@nodeName = Node4_specializedConstruction			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = advConstruction		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[advMetalworks]]				
+	{				
+		//pos = -2230, 1975,-1			
+		@pos = -2230, 1975,-1			
+					
+		//cost = 95			
+		@cost = 95			
+					
+		//nodeName = Node5_advMetalworks			
+		@nodeName = Node5_advMetalworks			
+					
+		//title = #LOC_ETT_advMetalworks_title			
+		@title #LOC_ETT_advMetalworks_title						
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = specializedConstruction		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[nanolathing]]				
+	{				
+		//pos = -1909, 1975,-1			
+		@pos = -1909, 1975,-1			
+					
+		//cost = 175			
+		@cost = 175			
+					
+		//nodeName = Node6_nanolathing			
+		@nodeName = Node6_nanolathing			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = advMetalworks		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[exoticAlloys]]				
+	{				
+		//pos = -1481, 1975,-1			
+		@pos = -1481, 1975,-1			
+					
+		//cost = 375			
+		@cost = 375			
+					
+		//nodeName = Node7_exoticAlloys			
+		@nodeName = Node7_exoticAlloys			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = nanolathing		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[landing]]				
+	{				
+		//pos = -2765, 1920,-1			
+		@pos = -2765, 1920,-1			
+					
+		//cost = 25			
+		@cost = 25			
+					
+		//nodeName = Node3_landing			
+		@nodeName = Node3_landing			
+					
+		//title = #LOC_ETT_landing_title			
+		@title #LOC_ETT_landing_title			
+					
+		//desc = #LOC_ETT_landing_description			
+		@desc = #LOC_ETT_landing_description			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = aviation		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[advLanding]]				
+	{				
+		//pos = -2551, 1920,-1			
+		@pos = -2551, 1920,-1			
+					
+		//cost = 50			
+		@cost = 50			
+					
+		//nodeName = Node4_advLanding			
+		@nodeName = Node4_advLanding			
+					
+		//title = #LOC_ETT_advLanding_title			
+		@title #LOC_ETT_advLanding_title			
+					
+		//desc = #LOC_ETT_advLanding_description			
+		@desc = #LOC_ETT_advLanding_description			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = landing		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[heavyLanding]]				
+	{				
+		//pos = -2337, 1920,-1			
+		@pos = -2337, 1920,-1			
+					
+		//cost = 80			
+		@cost = 80			
+					
+		//nodeName = Node4_heavyLanding			
+		@nodeName = Node4_heavyLanding			
+					
+		//title = #LOC_ETT_heavyLanding_title			
+		@title #LOC_ETT_heavyLanding_title			
+					
+		//desc = #LOC_ETT_heavyLanding_description			
+		@desc = #LOC_ETT_heavyLanding_description			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = advLandingLegs		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[composites]]				
+	{				
+		//pos = -1802, 1920,-1			
+		@pos = -1802, 1920,-1			
+					
+		//cost = 200			
+		@cost = 200			
+					
+		//nodeName = Node6_composites			
+		@nodeName = Node6_composites			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = nanolathing		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[metaMaterials]]				
+	{				
+		//pos = -1267, 1920,-1			
+		@pos = -1267, 1920,-1			
+					
+		//cost = 750			
+		@cost = 750			
+					
+		//nodeName = Node9_metaMaterials			
+		@nodeName = Node9_metaMaterials			
+					
+		//title = #LOC_ETT_metaMaterials_title			
+		@title #LOC_ETT_metaMaterials_title				
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = composites		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[aviation]]				
+	{				
+		//pos = -2872, 1865,-1			
+		@pos = -2872, 1865,-1			
+					
+		//cost = 15			
+		@cost = 15			
+					
+		//nodeName = Node3_aviation			
+		@nodeName = Node3_aviation			
+					
+		//title = #LOC_ETT_aviation_title			
+		@title #LOC_ETT_aviation_title					
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = engineering101		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[aerodynamicSystems]]				
+	{				
+		//pos = -2765, 1865,-1			
+		@pos = -2765, 1865,-1			
+					
+		//cost = 25			
+		@cost = 25			
+					
+		//nodeName = Node3_aerodynamicSystems			
+		@nodeName = Node3_aerodynamicSystems			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = aviation		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[subsonicFlight]]				
+	{				
+		//pos = -2551, 1865,-1			
+		@pos = -2551, 1865,-1			
+					
+		//cost = 50			
+		@cost = 50			
+					
+		//nodeName = Node4_subsonicFlight			
+		@nodeName = Node4_subsonicFlight			
+					
+		//title = #LOC_ETT_subsonicFlight_title			
+		@title #LOC_ETT_subsonicFlight_title				
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = aerodynamicSystems		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[supersonicFlight]]				
+	{				
+		//pos = -2230, 1865,-1			
+		@pos = -2230, 1865,-1			
+					
+		//cost = 95			
+		@cost = 95			
+					
+		//nodeName = Node0_supersonicFlight			
+		@nodeName = Node0_supersonicFlight			
+					
+		//title = #LOC_ETT_supersonicFlight_title			
+		@title #LOC_ETT_supersonicFlight_title			
+					
+		//desc = #LOC_ETT_supersonicFlight_description			
+		@desc = #LOC_ETT_supersonicFlight_description			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = subsonicFlight		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[hypersonicFlight]]				
+	{				
+		//pos = -1267, 1865,-1			
+		@pos = -1267, 1865,-1			
+					
+		//cost = 750			
+		@cost = 750			
+					
+		//nodeName = Node9_hypersonicFlight			
+		@nodeName = Node9_hypersonicFlight			
+					
+		//title = #LOC_ETT_hypersonicFlight_title			
+		@title #LOC_ETT_hypersonicFlight_title			
+					
+		//desc = #LOC_ETT_hypersonicFlight_description			
+		@desc = #LOC_ETT_hypersonicFlight_description			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = supersonicFlight		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+		Parent			
+		{			
+			parentID = aerospaceComposites		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[experimentalAerodynamics]]				
+	{				
+		//pos = -1053, 1865,-1			
+		@pos = -1053, 1865,-1			
+					
+		//cost = 1500			
+		@cost = 1500			
+					
+		//nodeName = Node11_experimentalAerodynamics			
+		@nodeName = Node11_experimentalAerodynamics			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = hypersonicFlight		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[advAerospaceEngineering]]				
+	{				
+		//pos = -625, 1865,-1			
+		@pos = -625, 1865,-1			
+					
+		//cost = 3500			
+		@cost = 3500			
+					
+		//nodeName = Node15_advAerospaceEngineering			
+		@nodeName = Node15_advAerospaceEngineering			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = experimentalAerodynamics		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+		Parent			
+		{			
+			parentID = experimentalFlightControls		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[highAltitudeFlight]]				
+	{				
+		//pos = -2230, 1755,-1			
+		@pos = -2230, 1755,-1			
+					
+		//cost = 95			
+		@cost = 95			
+					
+		//nodeName = Node5_highAltitudeFlight			
+		@nodeName = Node5_highAltitudeFlight			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = aircraftStructures		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[heavyAerodynamics]]				
+	{				
+		//pos = -1481, 1755,-1			
+		@pos = -1481, 1755,-1			
+					
+		//cost = 375			
+		@cost = 375			
+					
+		//nodeName = Node7_heavyAerodynamics			
+		@nodeName = Node7_heavyAerodynamics			
+					
+		//title = #LOC_ETT_heavyAerodynamics_title			
+		@title #LOC_ETT_heavyAerodynamics_title			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = highAltitudeFlight		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[aerospaceTech]]				
+	{				
+		//pos = -2551, 1700,-1			
+		@pos = -2551, 1700,-1			
+					
+		//cost = 50			
+		@cost = 50			
+					
+		//nodeName = Node4_aerospaceTech			
+		@nodeName = Node4_aerospaceTech			
+
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = heavyAerodynamics		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[aerospaceComposites]]				
+	{				
+		//pos = -1695, 1700,-1			
+		@pos = -1695, 1700,-1			
+					
+		//cost = 250			
+		@cost = 250			
+					
+		//nodeName = Node6_aerospaceComposites			
+		@nodeName = Node6_aerospaceComposites			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = aerospaceTech		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[specializedFlightSystems]]				
+	{				
+		//pos = -1267, 1700,-1			
+		@pos = -1267, 1700,-1			
+					
+		//cost = 750			
+		@cost = 750			
+					
+		//nodeName = Node9_specializedFlightSystems			
+		@nodeName = Node9_specializedFlightSystems			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = aerospaceComposites		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[flightControl]]				
+	{				
+		//pos = -2765, 1645,-1			
+		@pos = -2765, 1645,-1			
+					
+		//cost = 25			
+		@cost = 25			
+					
+		//nodeName = Node3_flightControl			
+		@nodeName = Node3_flightControl			
+					
+		//title = #LOC_ETT_flightControl_title			
+		@title #LOC_ETT_flightControl_title					
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = aviation		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[advFlightControl]]				
+	{				
+		//pos = -2551, 1645,-1			
+		@pos = -2551, 1645,-1			
+					
+		//cost = 50			
+		@cost = 50			
+					
+		//nodeName = Node4_advFlightControl			
+		@nodeName = Node4_advFlightControl			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = flightControl		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[advAerodynamics]]				
+	{				
+		//pos = -2230, 1645,-1			
+		@pos = -2230, 1645,-1			
+					
+		//cost = 95			
+		@cost = 95			
+					
+		//nodeName = Node5_advAerodynamics			
+		@nodeName = Node5_advAerodynamics			
+					
+		//title = #LOC_ETT_advAerodynamics_title			
+		@title #LOC_ETT_advAerodynamics_title					
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = advFlightControl		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[specializedControl]]				
+	{				
+		//pos = -1588, 1645,-1			
+		@pos = -1588, 1645,-1			
+					
+		//cost = 275			
+		@cost = 275			
+					
+		//nodeName = Node0_specializedControl			
+		@nodeName = Node0_specializedControl			
+					
+		//title = #LOC_ETT_specializedControl_title			
+		@title #LOC_ETT_specializedControl_title			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = advAerodynamics		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[efficientFlightSystems]]				
+	{				
+		//pos = -1695, 1535,-1			
+		@pos = -1695, 1535,-1			
+					
+		//cost = 250			
+		@cost = 250			
+					
+		//nodeName = Node6_efficientFlightSystems			
+		@nodeName = Node6_efficientFlightSystems			
+					
+		//title = #LOC_ETT_efficientFlightSystems_title			
+		@title #LOC_ETT_efficientFlightSystems_title						
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = turbofanEngines		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[expAircraftEngines]]				
+	{				
+		//pos = -1160, 1535,-1			
+		@pos = -1160, 1535,-1			
+					
+		//cost = 1000			
+		@cost = 1000			
+					
+		//nodeName = Node10_expAircraftEngines			
+		@nodeName = Node10_expAircraftEngines			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = experimentalTurbofanEngines		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+		Parent			
+		{			
+			parentID = turbopropEngines		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[heatManagementSystems]]				
+	{				
+		//pos = -2230, 1480,-1			
+		@pos = -2230, 1480,-1			
+					
+		//cost = 95			
+		@cost = 95			
+					
+		//nodeName = Node5_heatManagementSystems			
+		@nodeName = Node5_heatManagementSystems			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = thermodynamics		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[advHeatManagement]]				
+	{				
+		//pos = -1481, 1480,-1			
+		@pos = -1481, 1480,-1			
+					
+		//cost = 375			
+		@cost = 375			
+					
+		//nodeName = Node7_advHeatManagement			
+		@nodeName = Node7_advHeatManagement			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = heatManagementSystems		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[specializedRadiators]]				
+	{				
+		//pos = -1374, 1480,-1			
+		@pos = -1374, 1480,-1			
+					
+		//cost = 495			
+		@cost = 495			
+					
+		//nodeName = Node8_specializedRadiators			
+		@nodeName = Node8_specializedRadiators			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = advHeatManagement		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[exoticRadiators]]				
+	{				
+		//pos = -518, 1480,-1			
+		@pos = -518, 1480,-1			
+					
+		//cost = 4000			
+		@cost = 4000			
+					
+		//nodeName = Node16_exoticRadiators			
+		@nodeName = Node16_exoticRadiators			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = specializedRadiators		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[nuclearPower]]				
+	{				
+		//pos = -2123, 1425,-1			
+		@pos = -2123, 1425,-1			
+					
+		//cost = 125			
+		@cost = 125			
+					
+		//nodeName = Node5_nuclearPower			
+		@nodeName = Node5_nuclearPower			
+					
+		//title = #LOC_ETT_nuclearPower_title			
+		@title #LOC_ETT_nuclearPower_title				
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = heatManagementSystems		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[largeNuclearPower]]				
+	{				
+		//pos = -1802, 1425,-1			
+		@pos = -1802, 1425,-1			
+					
+		//cost = 200			
+		@cost = 200			
+					
+		//nodeName = Node6_largeNuclearPower			
+		@nodeName = Node6_largeNuclearPower			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = nuclearPower		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[nuclearFuelSystems]]				
+	{				
+		//pos = -1481, 1425,-1			
+		@pos = -1481, 1425,-1			
+					
+		//cost = 375			
+		@cost = 375			
+					
+		//nodeName = Node7_nuclearFuelSystems			
+		@nodeName = Node7_nuclearFuelSystems			
+					
+		//title = #LOC_ETT_nuclearFuelSystems_title			
+		@title #LOC_ETT_nuclearFuelSystems_title				
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = largeNuclearPower		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[advNuclearPower]]				
+	{				
+		//pos = -1267, 1425,-1			
+		@pos = -1267, 1425,-1			
+					
+		//cost = 750			
+		@cost = 750			
+					
+		//nodeName = Node9_advNuclearPower			
+		@nodeName = Node9_advNuclearPower			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = nuclearFuelSystems		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[expNuclearPower]]				
+	{				
+		//pos = -1053, 1425,-1			
+		@pos = -1053, 1425,-1			
+					
+		//cost = 1500			
+		@cost = 1500			
+					
+		//nodeName = Node11_expNuclearPower			
+		@nodeName = Node11_expNuclearPower			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = advNuclearPower		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[exoticNuclearPower]]				
+	{				
+		//pos = -518, 1425,-1			
+		@pos = -518, 1425,-1			
+					
+		//cost = 4000			
+		@cost = 4000			
+					
+		//nodeName = Node16_exoticNuclearPower			
+		@nodeName = Node16_exoticNuclearPower			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = expNuclearPower		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[nuclearPropulsion]]				
+	{				
+		//pos = -1481, 1370,-1			
+		@pos = -1481, 1370,-1			
+					
+		//cost = 375			
+		@cost = 375			
+					
+		//nodeName = Node7_nuclearPropulsion			
+		@nodeName = Node7_nuclearPropulsion			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = largeNuclearPower		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[improvedNuclearPropulsion]]				
+	{				
+		//pos = -1374, 1370,-1			
+		@pos = -1374, 1370,-1			
+					
+		//cost = 495			
+		@cost = 495			
+					
+		//nodeName = Node8_improvedNuclearPropulsion			
+		@nodeName = Node8_improvedNuclearPropulsion			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = nuclearPropulsion		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[advNuclearPropulsion]]				
+	{				
+		//pos = -1160, 1370,-1			
+		@pos = -1160, 1370,-1			
+					
+		//cost = 1000			
+		@cost = 1000			
+					
+		//nodeName = Node10_advNuclearPropulsion			
+		@nodeName = Node10_advNuclearPropulsion			
+					
+		//title = #LOC_ETT_advNuclearPropulsion_title			
+		@title #LOC_ETT_advNuclearPropulsion_title			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = improvedNuclearPropulsion		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[expNuclearPropulsion]]				
+	{				
+		//pos = -946, 1370,-1			
+		@pos = -946, 1370,-1			
+					
+		//cost = 1750			
+		@cost = 1750			
+					
+		//nodeName = Node12_expNuclearPropulsion			
+		@nodeName = Node12_expNuclearPropulsion			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = highEfficiencyNuclear		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[exoticNuclearPropulsion]]				
+	{				
+		//pos = -839, 1370,-1			
+		@pos = -839, 1370,-1			
+					
+		//cost = 2250			
+		@cost = 2250			
+					
+		//nodeName = Node13_exoticNuclearPropulsion			
+		@nodeName = Node13_exoticNuclearPropulsion			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = expNuclearPropulsion		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[antimatterPower]]				
+	{				
+		//pos = -732, 1370,-1			
+		@pos = -732, 1370,-1			
+					
+		//cost = 2750			
+		@cost = 2750			
+					
+		//nodeName = Node14_antimatterPower			
+		@nodeName = Node14_antimatterPower					
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = exoticNuclearPropulsion		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[unifiedFieldTheory]]				
+	{				
+		//pos = -304, 1370,-1			
+		@pos = -304, 1370,-1			
+					
+		//cost = 6000			
+		@cost = 6000			
+					
+		//nodeName = Node18_unifiedFieldTheory			
+		@nodeName = Node18_unifiedFieldTheory			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = antimatterPower		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+		Parent			
+		{			
+			parentID = exoticReactions		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[ultraHighEnergyPhysics]]				
+	{				
+		//pos = -90, 1370,-1			
+		@pos = -90, 1370,-1			
+					
+		//cost = 8000			
+		@cost = 8000			
+					
+		//nodeName = Node20_ultraHighEnergyPhysics			
+		@nodeName = Node20_ultraHighEnergyPhysics						
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = unifiedFieldTheory		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[survivability]]				
+	{				
+		//pos = -3086, 1315,-1			
+		@pos = -3086, 1315,-1			
+					
+		//cost = 5			
+		@cost = 5			
+					
+		//nodeName = Node2_survivability			
+		@nodeName = Node2_survivability			
+					
+		//title = #LOC_ETT_survivability_title			
+		@title #LOC_ETT_survivability_title					
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = engineering101		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[enhancedSurvivability]]				
+	{				
+		//pos = -2230, 1315,-1			
+		@pos = -2230, 1315,-1			
+					
+		//cost = 95			
+		@cost = 95			
+					
+		//nodeName = Node5_enhancedSurvivability			
+		@nodeName = Node5_enhancedSurvivability			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = advParachutes		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[storageTech]]				
+	{				
+		//pos = -2016, 1315,-1			
+		@pos = -2016, 1315,-1			
+					
+		//cost = 150			
+		@cost = 150			
+					
+		//nodeName = Node5_storageTech			
+		@nodeName = Node5_storageTech			
+					
+		//title = #LOC_ETT_storageTech_title			
+		@title #LOC_ETT_storageTech_title					
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = simpleCommandModules		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[largeVolumeContainment]]				
+	{				
+		//pos = -1267, 1315,-1			
+		@pos = -1267, 1315,-1			
+					
+		//cost = 750			
+		@cost = 750			
+					
+		//nodeName = Node9_largeVolumeContainment			
+		@nodeName = Node9_largeVolumeContainment			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = advStorageTech		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[fusionPower]]				
+	{				
+		//pos = -1053, 1315,-1			
+		@pos = -1053, 1315,-1			
+					
+		//cost = 1500			
+		@cost = 1500			
+					
+		//nodeName = Node11_fusionPower			
+		@nodeName = Node11_fusionPower			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = advNuclearPropulsion		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[fusionRockets]]				
+	{				
+		//pos = -946, 1315,-1			
+		@pos = -946, 1315,-1			
+					
+		//cost = 1750			
+		@cost = 1750			
+					
+		//nodeName = Node12_fusionRockets			
+		@nodeName = Node12_fusionRockets			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = fusionPower		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[advFusionReactions]]				
+	{				
+		//pos = -839, 1315,-1			
+		@pos = -839, 1315,-1			
+					
+		//cost = 2250			
+		@cost = 2250			
+					
+		//nodeName = Node13_advFusionReactions			
+		@nodeName = Node13_advFusionReactions					
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = fusionRockets		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[exoticReactions]]				
+	{				
+		//pos = -518, 1315,-1			
+		@pos = -518, 1315,-1			
+					
+		//cost = 4000			
+		@cost = 4000			
+					
+		//nodeName = Node16_exoticReactions			
+		@nodeName = Node16_exoticReactions						
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = advFusionReactions		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[quantumReactions]]				
+	{				
+		//pos = -90, 1315,-1			
+		@pos = -90, 1315,-1			
+					
+		//cost = 8000			
+		@cost = 8000			
+					
+		//nodeName = Node20_quantumReactions			
+		@nodeName = Node20_quantumReactions					
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = exoticReactions		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[simpleCommandModules]]				
+	{				
+		//pos = -2230, 1260,-1			
+		@pos = -2230, 1260,-1			
+					
+		//cost = 95			
+		@cost = 95			
+					
+		//nodeName = Node5_simpleCommandModules			
+		@nodeName = Node5_simpleCommandModules			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = mannedTech		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[commandModules]]				
+	{				
+		//pos = -1481, 1260,-1			
+		@pos = -1481, 1260,-1			
+					
+		//cost = 375			
+		@cost = 375			
+					
+		//nodeName = Node7_commandModules			
+		@nodeName = Node7_commandModules			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = simpleCommandModules		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+		Parent			
+		{			
+			parentID = lifeSupport		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[heavyCommandModules]]				
+	{				
+		//pos = -1374, 1260,-1			
+		@pos = -1374, 1260,-1			
+					
+		//cost = 495			
+		@cost = 495			
+					
+		//nodeName = Node8_heavyCommandModules			
+		@nodeName = Node8_heavyCommandModules			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = commandModules		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[specializedCommandModules]]				
+	{				
+		//pos = -1267, 1260,-1			
+		@pos = -1267, 1260,-1			
+					
+		//cost = 750			
+		@cost = 750			
+					
+		//nodeName = Node9_specializedCommandModules			
+		@nodeName = Node9_specializedCommandModules			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = heavyCommandModules		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[heavyCommandCenters]]				
+	{				
+		//pos = -946, 1260,-1			
+		@pos = -946, 1260,-1			
+					
+		//cost = 1750			
+		@cost = 1750			
+					
+		//nodeName = Node12_heavyCommandCenters			
+		@nodeName = Node12_heavyCommandCenters			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = specializedCommandModules		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+		Parent			
+		{			
+			parentID = advLogistics		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[specializedCommandCenters]]				
+	{				
+		//pos = -625, 1260,-1			
+		@pos = -625, 1260,-1			
+					
+		//cost = 3500			
+		@cost = 3500			
+					
+		//nodeName = Node15_specializedCommandCenters			
+		@nodeName = Node15_specializedCommandCenters			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = heavyCommandCenters		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[spaceExploration]]				
+	{				
+		//pos = -2016, 1205,-1			
+		@pos = -2016, 1205,-1			
+					
+		//cost = 150			
+		@cost = 150			
+					
+		//nodeName = Node5_spaceExploration			
+		@nodeName = Node5_spaceExploration			
+					
+		//title = #LOC_ETT_spaceExploration_title			
+		@title #LOC_ETT_spaceExploration_title						
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = simpleCommandModules		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[advExploration]]				
+	{				
+		//pos = -1802, 1205,-1			
+		@pos = -1802, 1205,-1			
+					
+		//cost = 200			
+		@cost = 200			
+					
+		//nodeName = Node6_advExploration			
+		@nodeName = Node6_advExploration			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = spaceExploration		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[heavyLanders]]				
+	{				
+		//pos = -1588, 1205,-1			
+		@pos = -1588, 1205,-1			
+					
+		//cost = 275			
+		@cost = 275			
+					
+		//nodeName = Node7_heavyLanders			
+		@nodeName = Node7_heavyLanders					
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = advExploration		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[specializedLanders]]				
+	{				
+		//pos = -1481, 1205,-1			
+		@pos = -1481, 1205,-1			
+					
+		//cost = 375			
+		@cost = 375			
+					
+		//nodeName = Node7_specializedLanders			
+		@nodeName = Node7_specializedLanders			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = heavyLanders		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[logistics]]				
+	{				
+		//pos = -1374, 1205,-1			
+		@pos = -1374, 1205,-1			
+					
+		//cost = 495			
+		@cost = 495			
+					
+		//nodeName = Node8_logistics			
+		@nodeName = Node8_logistics			
+					
+		//title = #LOC_ETT_logistics_title			
+		@title #LOC_ETT_logistics_title					
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = specializedLanders		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[advLogistics]]				
+	{				
+		//pos = -1160, 1205,-1			
+		@pos = -1160, 1205,-1			
+					
+		//cost = 1000			
+		@cost = 1000			
+					
+		//nodeName = Node10_advLogistics			
+		@nodeName = Node10_advLogistics			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = logistics		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[stability]]				
+	{				
+		//pos = -3086, 1095,-1			
+		@pos = -3086, 1095,-1			
+					
+		//cost = 5			
+		@cost = 5			
+					
+		//nodeName = Node2_stability			
+		@nodeName = Node2_stability			
+					
+		//title = #LOC_ETT_stability_title			
+		@title #LOC_ETT_stability_title						
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = engineering101		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[miniaturization]]				
+	{				
+		//pos = -2872, 985,-1			
+		@pos = -2872, 985,-1			
+					
+		//cost = 15			
+		@cost = 15			
+					
+		//nodeName = Node3_miniaturization			
+		@nodeName = Node3_miniaturization			
+					
+		//title = #LOC_ETT_miniaturization_title			
+		@title #LOC_ETT_miniaturization_title					
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = basicRocketry		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[generalRocketry]]				
+	{				
+		//pos = -2765, 985,-1			
+		@pos = -2765, 985,-1			
+					
+		//cost = 25			
+		@cost = 25			
+					
+		//nodeName = Node3_generalRocketry			
+		@nodeName = Node3_generalRocketry			
+					
+		//title = #LOC_ETT_generalRocketry_title			
+		@title #LOC_ETT_generalRocketry_title			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = miniaturization		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[advRocketry]]				
+	{				
+		//pos = -2337, 985,-1			
+		@pos = -2337, 985,-1			
+					
+		//cost = 80			
+		@cost = 80			
+					
+		//nodeName = Node4_advRocketry			
+		@nodeName = Node4_advRocketry			
+					
+		//title = #LOC_ETT_advRocketry_title			
+		@title #LOC_ETT_advRocketry_title					
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = intermediateRocketry		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+		Parent			
+		{			
+			parentID = advConstruction		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[heavyRocketry]]				
+	{				
+		//pos = -1909, 985,-1			
+		@pos = -1909, 985,-1			
+					
+		//cost = 175			
+		@cost = 175			
+					
+		//nodeName = Node6_heavyRocketry			
+		@nodeName = Node6_heavyRocketry			
+					
+		//title = #LOC_ETT_heavyRocketry_title			
+		@title #LOC_ETT_heavyRocketry_title					
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = advRocketry		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[heavierRocketry]]				
+	{				
+		//pos = -1481, 985,-1			
+		@pos = -1481, 985,-1			
+					
+		//cost = 375			
+		@cost = 375			
+					
+		//nodeName = Node7_heavierRocketry			
+		@nodeName = Node7_heavierRocketry			
+					
+		//title = #LOC_ETT_heavierRocketry_title			
+		@title #LOC_ETT_heavierRocketry_title						
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = heavyRocketry		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[veryHeavyRocketry]]				
+	{				
+		//pos = -1160, 985,-1			
+		@pos = -1160, 985,-1			
+					
+		//cost = 1000			
+		@cost = 1000			
+					
+		//nodeName = Node10_veryHeavyRocketry			
+		@nodeName = Node10_veryHeavyRocketry			
+					
+		//title = #LOC_ETT_veryHeavyRocketry_title			
+		@title #LOC_ETT_veryHeavyRocketry_title						
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = heavierRocketry		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[giganticRocketry]]				
+	{				
+		//pos = -946, 985,-1			
+		@pos = -946, 985,-1			
+					
+		//cost = 1750			
+		@cost = 1750			
+					
+		//nodeName = Node12_giganticRocketry			
+		@nodeName = Node12_giganticRocketry			
+					
+		//title = #LOC_ETT_giganticRocketry_title			
+		@title #LOC_ETT_giganticRocketry_title					
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = veryHeavyRocketry		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[colossalRocketry]]				
+	{				
+		//pos = -732, 985,-1			
+		@pos = -732, 985,-1			
+					
+		//cost = 2750			
+		@cost = 2750			
+					
+		//nodeName = Node14_colossalRocketry			
+		@nodeName = Node14_colossalRocketry			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = giganticRocketry		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[precisionEngineering]]				
+	{				
+		//pos = -2765, 930,-1			
+		@pos = -2765, 930,-1			
+					
+		//cost = 25			
+		@cost = 25			
+					
+		//nodeName = Node3_precisionEngineering			
+		@nodeName = Node3_precisionEngineering			
+					
+		//title = #LOC_ETT_precisionEngineering_title			
+		@title #LOC_ETT_precisionEngineering_title			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = miniaturization		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[start]]				
+	{				
+		//pos = -3300, 820,-1			
+		@pos = -3300, 820,-1			
+					
+		//cost = 0			
+		@cost = 0			
+					
+		//nodeName = Node0_start			
+		@nodeName = Node0_start			
+					
+		//title = #LOC_ETT_start_title			
+		@title #LOC_ETT_start_title			
+					
+		//desc = #LOC_ETT_start_description			
+		@desc = #LOC_ETT_start_description			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+	}				
+	@RDNode:HAS[#id[basicRocketry]]				
+	{				
+		//pos = -3193, 820,-1			
+		@pos = -3193, 820,-1			
+					
+		//cost = 1			
+		@cost = 1			
+					
+		//nodeName = Node1_basicRocketry			
+		@nodeName = Node1_basicRocketry			
+					
+		//title = #LOC_ETT_basicRocketry_title			
+		@title #LOC_ETT_basicRocketry_title			
+					
+		//desc = #LOC_ETT_basicRocketry_description			
+		@desc = #autoLOC_501023 //#autoLOC_501023		
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = start		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[propulsionSystems]]				
+	{				
+		//pos = -2872, 820,-1			
+		@pos = -2872, 820,-1			
+					
+		//cost = 15			
+		@cost = 15			
+					
+		//nodeName = Node3_propulsionSystems			
+		@nodeName = Node3_propulsionSystems			
+					
+		//title = #LOC_ETT_propulsionSystems_title			
+		@title #LOC_ETT_propulsionSystems_title			
+					
+		//desc = #LOC_ETT_propulsionSystems_description			
+		@desc = #LOC_ETT_propulsionSystems_description			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = basicRocketry		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[precisionPropulsion]]				
+	{				
+		//pos = -2230, 820,-1			
+		@pos = -2230, 820,-1			
+					
+		//cost = 95			
+		@cost = 95			
+					
+		//nodeName = Node5_precisionPropulsion			
+		@nodeName = Node5_precisionPropulsion			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = propulsionSystems		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[experimentalRocketry]]				
+	{				
+		//pos = -732, 820,-1			
+		@pos = -732, 820,-1			
+					
+		//cost = 2750			
+		@cost = 2750			
+					
+		//nodeName = Node14_experimentalRocketry			
+		@nodeName = Node14_experimentalRocketry			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = hybridRockets		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[specializedFuelStorage]]				
+	{				
+		//pos = -1267, 710,-1			
+		@pos = -1267, 710,-1			
+					
+		//cost = 750			
+		@cost = 750			
+					
+		//nodeName = Node9_specializedFuelStorage			
+		@nodeName = Node9_specializedFuelStorage			
+					
+		//title = #LOC_ETT_specializedFuelStorage_title			
+		@title #LOC_ETT_specializedFuelStorage_title					
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = highPerformanceFuelSystems		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[extremeFuelStorage]]				
+	{				
+		//pos = -946, 710,-1			
+		@pos = -946, 710,-1			
+					
+		//cost = 1750			
+		@cost = 1750			
+					
+		//nodeName = Node12_extremeFuelStorage			
+		@nodeName = Node12_extremeFuelStorage			
+					
+		//title = #LOC_ETT_extremeFuelStorage_title			
+		@title #LOC_ETT_extremeFuelStorage_title			
+		
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = specializedFuelStorage		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[exoticFuelStorage]]				
+	{				
+		//pos = -625, 710,-1			
+		@pos = -625, 710,-1			
+					
+		//cost = 3500			
+		@cost = 3500			
+					
+		//nodeName = Node15_exoticFuelStorage			
+		@nodeName = Node15_exoticFuelStorage			
+					
+		//title = #LOC_ETT_exoticFuelStorage_title			
+		@title #LOC_ETT_exoticFuelStorage_title					
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = extremeFuelStorage		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[fuelSystems]]				
+	{				
+		//pos = -3086, 655,-1			
+		@pos = -3086, 655,-1			
+					
+		//cost = 5			
+		@cost = 5			
+					
+		//nodeName = Node2_fuelSystems			
+		@nodeName = Node2_fuelSystems			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = start		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[advFuelSystems]]				
+	{				
+		//pos = -2658, 655,-1			
+		@pos = -2658, 655,-1			
+					
+		//cost = 35			
+		@cost = 35			
+					
+		//nodeName = Node3_advFuelSystems			
+		@nodeName = Node3_advFuelSystems			
+					
+		//title = #LOC_ETT_advFuelSystems_title			
+		@title #LOC_ETT_advFuelSystems_title						
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = fuelSystems		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[highPerformanceFuelSystems]]				
+	{				
+		//pos = -2016, 655,-1			
+		@pos = -2016, 655,-1			
+					
+		//cost = 150			
+		@cost = 150			
+					
+		//nodeName = Node5_highPerformanceFuelSystems			
+		@nodeName = Node5_highPerformanceFuelSystems			
+					
+		//title = #LOC_ETT_highPerformanceFuelSystems_title			
+		@title #LOC_ETT_highPerformanceFuelSystems_title				
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = advFuelSystems		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[advOffworldMining]]				
+	{				
+		//pos = -1160, 655,-1			
+		@pos = -1160, 655,-1			
+					
+		//cost = 1000			
+		@cost = 1000			
+					
+		//nodeName = Node10_advOffworldMining			
+		@nodeName = Node10_advOffworldMining					
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = offworldMining		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[resourceExploitation]]				
+	{				
+		//pos = -839, 655,-1			
+		@pos = -839, 655,-1			
+					
+		//cost = 2250			
+		@cost = 2250			
+					
+		//nodeName = Node13_resourceExploitation			
+		@nodeName = Node13_resourceExploitation			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = advOffworldMining		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[unmannedTech]]				
+	{				
+		//pos = -2551, 600,-1			
+		@pos = -2551, 600,-1			
+					
+		//cost = 50			
+		@cost = 50			
+					
+		//nodeName = Node4_unmannedTech			
+		@nodeName = Node4_unmannedTech			
+					
+		//title = #LOC_ETT_unmannedTech_title			
+		@title #LOC_ETT_unmannedTech_title						
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = electronics		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[advUnmanned]]				
+	{				
+		//pos = -2230, 600,-1			
+		@pos = -2230, 600,-1			
+					
+		//cost = 95			
+		@cost = 95			
+					
+		//nodeName = Node5_advUnmanned			
+		@nodeName = Node5_advUnmanned			
+					
+		//title = #LOC_ETT_advUnmanned_title			
+		@title #LOC_ETT_advUnmanned_title			
+					
+		//desc = #LOC_ETT_advUnmanned_description			
+		@desc = #LOC_ETT_advUnmanned_description			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = unmannedTech		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+		Parent			
+		{			
+			parentID = computers		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[largeUnmanned]]				
+	{				
+		//pos = -1695, 600,-1			
+		@pos = -1695, 600,-1			
+					
+		//cost = 250			
+		@cost = 250			
+					
+		//nodeName = Node6_largeUnmanned			
+		@nodeName = Node6_largeUnmanned			
+					
+		//title = #LOC_ETT_largeUnmanned_title			
+		@title #LOC_ETT_largeUnmanned_title			
+					
+		//desc = #LOC_ETT_largeUnmanned_description			
+		@desc = #LOC_ETT_largeUnmanned_description			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = advUnmanned		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+		Parent			
+		{			
+			parentID = advComputers		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[electronics]]				
+	{				
+		//pos = -2765, 545,-1			
+		@pos = -2765, 545,-1			
+					
+		//cost = 25			
+		@cost = 25			
+					
+		//nodeName = Node3_electronics			
+		@nodeName = Node3_electronics			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = advElectrics		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[microwavePowerTransmission]]				
+	{				
+		//pos = -1053, 545,-1			
+		@pos = -1053, 545,-1			
+					
+		//cost = 1500			
+		@cost = 1500			
+					
+		//nodeName = Node11_microwavePowerTransmission			
+		@nodeName = Node11_microwavePowerTransmission			
+					
+		//title = #LOC_ETT_microwavePowerTransmission_title			
+		@title #LOC_ETT_microwavePowerTransmission_title					
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = experimentalElectrics		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[electrics]]				
+	{				
+		//pos = -3300, 490,-1			
+		@pos = -3300, 490,-1			
+					
+		//cost = 0			
+		@cost = 0			
+					
+		//nodeName = Node0_electrics			
+		@nodeName = Node0_electrics			
+					
+		//title = #LOC_ETT_electrics_title			
+		@title #LOC_ETT_electrics_title					
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+	}				
+	@RDNode:HAS[#id[advElectrics]]				
+	{				
+		//pos = -2872, 490,-1			
+		@pos = -2872, 490,-1			
+					
+		//cost = 15			
+		@cost = 15			
+					
+		//nodeName = Node3_advElectrics			
+		@nodeName = Node3_advElectrics			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = electrics		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[specializedElectrics]]				
+	{				
+		//pos = -2230, 490,-1			
+		@pos = -2230, 490,-1			
+					
+		//cost = 95			
+		@cost = 95			
+					
+		//nodeName = Node5_specializedElectrics			
+		@nodeName = Node5_specializedElectrics			
+					
+		//title = #LOC_ETT_specializedElectrics_title			
+		@title #LOC_ETT_specializedElectrics_title			
+					
+		//desc = #LOC_ETT_specializedElectrics_description			
+		@desc = #LOC_ETT_specializedElectrics_description			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = advElectrics		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[largeElectrics]]				
+	{				
+		//pos = -1802, 490,-1			
+		@pos = -1802, 490,-1			
+					
+		//cost = 200			
+		@cost = 200			
+					
+		//nodeName = Node6_largeElectrics			
+		@nodeName = Node6_largeElectrics			
+					
+		//title = #LOC_ETT_largeElectrics_title			
+		@title #LOC_ETT_largeElectrics_title			
+					
+		//desc = #LOC_ETT_largeElectrics_description			
+		@desc = #LOC_ETT_largeElectrics_description			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = specializedElectrics		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[experimentalElectrics]]				
+	{				
+		//pos = -1267, 490,-1			
+		@pos = -1267, 490,-1			
+					
+		//cost = 750			
+		@cost = 750			
+					
+		//nodeName = Node9_experimentalElectrics			
+		@nodeName = Node9_experimentalElectrics			
+					
+		//title = #LOC_ETT_experimentalElectrics_title			
+		@title #LOC_ETT_experimentalElectrics_title			
+					
+		//desc = #LOC_ETT_experimentalElectrics_description			
+		@desc = #LOC_ETT_experimentalElectrics_description			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = largeElectrics		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[highTechElectricalSystems]]				
+	{				
+		//pos = -1053, 490,-1			
+		@pos = -1053, 490,-1			
+					
+		//cost = 1500			
+		@cost = 1500			
+					
+		//nodeName = Node11_highTechElectricalSystems			
+		@nodeName = Node11_highTechElectricalSystems			
+					
+		//title = #LOC_ETT_highTechElectricalSystems_title			
+		@title #LOC_ETT_highTechElectricalSystems_title			
+					
+		//desc = #LOC_ETT_highTechElectricalSystems_description			
+		@desc = #LOC_ETT_highTechElectricalSystems_description			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = experimentalElectrics		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[highPowerElectricalSystems]]				
+	{				
+		//pos = -839, 490,-1			
+		@pos = -839, 490,-1			
+					
+		//cost = 2250			
+		@cost = 2250			
+					
+		//nodeName = Node13_highPowerElectricalSystems			
+		@nodeName = Node13_highPowerElectricalSystems			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = highTechElectricalSystems		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[experimentalElectricalSystems]]				
+	{				
+		//pos = -518, 490,-1			
+		@pos = -518, 490,-1			
+					
+		//cost = 4000			
+		@cost = 4000			
+					
+		//nodeName = Node16_experimentalElectricalSystems			
+		@nodeName = Node16_experimentalElectricalSystems			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = highPowerElectricalSystems		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[exoticElectricalSystems]]				
+	{				
+		//pos = -304, 490,-1			
+		@pos = -304, 490,-1			
+					
+		//cost = 6000			
+		@cost = 6000			
+					
+		//nodeName = Node18_exoticElectricalSystems			
+		@nodeName = Node18_exoticElectricalSystems			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = experimentalElectricalSystems		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[ionPropulsion]]				
+	{				
+		//pos = -1481, 435,-1			
+		@pos = -1481, 435,-1			
+					
+		//cost = 375			
+		@cost = 375			
+					
+		//nodeName = Node7_ionPropulsion			
+		@nodeName = Node7_ionPropulsion			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = largeElectrics		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[advIonPropulsion]]				
+	{				
+		//pos = -1374, 435,-1			
+		@pos = -1374, 435,-1			
+					
+		//cost = 495			
+		@cost = 495			
+					
+		//nodeName = Node8_advIonPropulsion			
+		@nodeName = Node8_advIonPropulsion			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = ionPropulsion		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[advGriddedThrusters]]				
+	{				
+		//pos = -1267, 435,-1			
+		@pos = -1267, 435,-1			
+					
+		//cost = 750			
+		@cost = 750			
+					
+		//nodeName = Node9_advGriddedThrusters			
+		@nodeName = Node9_advGriddedThrusters			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = advIonPropulsion		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[expGriddedThrusters]]				
+	{				
+		//pos = -1160, 435,-1			
+		@pos = -1160, 435,-1			
+					
+		//cost = 1000			
+		@cost = 1000			
+					
+		//nodeName = Node10_expGriddedThrusters			
+		@nodeName = Node10_expGriddedThrusters			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = advGriddedThrusters		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[advSolarTech]]				
+	{				
+		//pos = -2230, 380,-1			
+		@pos = -2230, 380,-1			
+					
+		//cost = 95			
+		@cost = 95			
+					
+		//nodeName = Node5_advSolarTech			
+		@nodeName = Node5_advSolarTech			
+					
+		//title = #LOC_ETT_advSolarTech_title			
+		@title #LOC_ETT_advSolarTech_title						
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = solarTech		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[advPVMaterials]]				
+	{				
+		//pos = -2016, 380,-1			
+		@pos = -2016, 380,-1			
+					
+		//cost = 150			
+		@cost = 150			
+					
+		//nodeName = Node5_advPVMaterials			
+		@nodeName = Node5_advPVMaterials			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = advSolarTech		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[cuttingEdgeSolarTech]]				
+	{				
+		//pos = -1695, 380,-1			
+		@pos = -1695, 380,-1			
+					
+		//cost = 250			
+		@cost = 250			
+					
+		//nodeName = Node6_cuttingEdgeSolarTech			
+		@nodeName = Node6_cuttingEdgeSolarTech					
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = advPVMaterials		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[exoticSolarTech]]				
+	{				
+		//pos = -1374, 380,-1			
+		@pos = -1374, 380,-1			
+					
+		//cost = 495			
+		@cost = 495			
+					
+		//nodeName = Node8_exoticSolarTech			
+		@nodeName = Node8_exoticSolarTech					
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = expSolarTech		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[plasmaPropulsion]]				
+	{				
+		//pos = -1267, 380,-1			
+		@pos = -1267, 380,-1			
+					
+		//cost = 750			
+		@cost = 750			
+					
+		//nodeName = Node9_plasmaPropulsion			
+		@nodeName = Node9_plasmaPropulsion			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = ionPropulsion		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[advEMSystems]]				
+	{				
+		//pos = -1053, 380,-1			
+		@pos = -1053, 380,-1			
+					
+		//cost = 1500			
+		@cost = 1500			
+					
+		//nodeName = Node11_advEMSystems			
+		@nodeName = Node11_advEMSystems			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = plasmaPropulsion		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[specializedPlasmaGeneration]]				
+	{				
+		//pos = -839, 380,-1			
+		@pos = -839, 380,-1			
+					
+		//cost = 2250			
+		@cost = 2250			
+					
+		//nodeName = Node13_specializedPlasmaGeneration			
+		@nodeName = Node13_specializedPlasmaGeneration			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = advEMSystems		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[exoticPlasmaPropulsion]]				
+	{				
+		//pos = -518, 380,-1			
+		@pos = -518, 380,-1			
+					
+		//cost = 4000			
+		@cost = 4000			
+					
+		//nodeName = Node16_exoticPlasmaPropulsion			
+		@nodeName = Node16_exoticPlasmaPropulsion			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = specializedPlasmaGeneration		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[advancedMotors]]				
+	{				
+		//pos = -2551, 270,-1			
+		@pos = -2551, 270,-1			
+					
+		//cost = 50			
+		@cost = 50			
+					
+		//nodeName = Node4_advancedMotors			
+		@nodeName = Node4_advancedMotors			
+					
+		//title = #LOC_ETT_advancedMotors_title			
+		@title #LOC_ETT_advancedMotors_title				
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = rovers		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[experimentalMotors]]				
+	{				
+		//pos = -2016, 270,-1			
+		@pos = -2016, 270,-1			
+					
+		//cost = 150			
+		@cost = 150			
+					
+		//nodeName = Node0_experimentalMotors			
+		@nodeName = Node0_experimentalMotors			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = advancedMotors		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[recycling]]				
+	{				
+		//pos = -1374, 215,-1			
+		@pos = -1374, 215,-1			
+					
+		//cost = 495			
+		@cost = 495			
+					
+		//nodeName = Node8_recycling			
+		@nodeName = Node8_recycling			
+					
+		//title = #LOC_ETT_recycling_title			
+		@title #LOC_ETT_recycling_title				
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = advLifeSupport		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[hydroponics]]				
+	{				
+		//pos = -1160, 215,-1			
+		@pos = -1160, 215,-1			
+					
+		//cost = 1000			
+		@cost = 1000			
+					
+		//nodeName = Node10_hydroponics			
+		@nodeName = Node10_hydroponics			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = recycling		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[longTermScienceTech]]				
+	{				
+		//pos = -1374, 160,-1			
+		@pos = -1374, 160,-1			
+					
+		//cost = 495			
+		@cost = 495			
+					
+		//nodeName = Node8_longTermScienceTech			
+		@nodeName = Node8_longTermScienceTech			
+					
+		//title = #LOC_ETT_longTermScienceTech_title			
+		@title #LOC_ETT_longTermScienceTech_title					
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = experimentalScience		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[scientificOutposts]]				
+	{				
+		//pos = -1053, 160,-1			
+		@pos = -1053, 160,-1			
+					
+		//cost = 1500			
+		@cost = 1500			
+					
+		//nodeName = Node11_scientificOutposts			
+		@nodeName = Node11_scientificOutposts			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = longTermScienceTech		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[basicScience]]				
+	{				
+		//pos = -3300, 105,-1			
+		@pos = -3300, 105,-1			
+					
+		//cost = 0			
+		@cost = 0			
+					
+		//nodeName = Node0_basicScience			
+		@nodeName = Node0_basicScience			
+					
+		//title = #LOC_ETT_basicScience_title			
+		@title #LOC_ETT_basicScience_title					
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+	}				
+	@RDNode:HAS[#id[fieldScience]]				
+	{				
+		//pos = -2979, 105,-1			
+		@pos = -2979, 105,-1			
+					
+		//cost = 8			
+		@cost = 8			
+					
+		//nodeName = Node2_fieldScience			
+		@nodeName = Node2_fieldScience			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = basicScience		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[scienceTech]]				
+	{				
+		//pos = -2551, 105,-1			
+		@pos = -2551, 105,-1			
+					
+		//cost = 50			
+		@cost = 50			
+					
+		//nodeName = Node4_scienceTech			
+		@nodeName = Node4_scienceTech			
+					
+		//title = #LOC_ETT_scienceTech_title			
+		@title #LOC_ETT_scienceTech_title					
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = fieldScience		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[advScienceTech]]				
+	{				
+		//pos = -2230, 105,-1			
+		@pos = -2230, 105,-1			
+					
+		//cost = 95			
+		@cost = 95			
+					
+		//nodeName = Node5_advScienceTech			
+		@nodeName = Node5_advScienceTech			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = scienceTech		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[experimentalScience]]				
+	{				
+		//pos = -1909, 105,-1			
+		@pos = -1909, 105,-1			
+					
+		//cost = 175			
+		@cost = 175			
+					
+		//nodeName = Node6_experimentalScience			
+		@nodeName = Node6_experimentalScience			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = advScienceTech		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[specializedScienceTech]]				
+	{				
+		//pos = -1695, 105,-1			
+		@pos = -1695, 105,-1			
+					
+		//cost = 250			
+		@cost = 250			
+					
+		//nodeName = Node6_specializedScienceTech			
+		@nodeName = Node6_specializedScienceTech			
+					
+		//title = #LOC_ETT_specializedScienceTech_title			
+		@title #LOC_ETT_specializedScienceTech_title					
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = experimentalScience		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[highEnergyScience]]				
+	{				
+		//pos = -1374, 105,-1			
+		@pos = -1374, 105,-1			
+					
+		//cost = 495			
+		@cost = 495			
+					
+		//nodeName = Node8_highEnergyScience			
+		@nodeName = Node8_highEnergyScience			
+					
+		//title = #LOC_ETT_highEnergyScience_title			
+		@title #LOC_ETT_highEnergyScience_title					
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = specializedScienceTech		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}				
+	@RDNode:HAS[#id[appliedHighEnergyPhysics]]				
+	{				
+		//pos = -946, 105,-1			
+		@pos = -946, 105,-1			
+					
+		//cost = 1750			
+		@cost = 1750			
+					
+		//nodeName = Node12_appliedHighEnergyPhysics			
+		@nodeName = Node12_appliedHighEnergyPhysics			
+					
+		//title = #LOC_ETT_appliedHighEnergyPhysics_title			
+		@title #LOC_ETT_appliedHighEnergyPhysics_title			
+					
+		-Parent{}			
+		-Parent{}			
+		-Parent{}			
+		Parent			
+		{			
+			parentID = highEnergyScience		
+			lineFrom = RIGHT		
+			lineTo = LEFT		
+		}			
+	}
