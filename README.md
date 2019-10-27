@@ -21,7 +21,7 @@ INSTALLATION
 
 To install, place the GameData folder inside your Kerbal Space Program folder. If asked to overwrite files, do so.
 
-This mod is only a partial tech tree. It requires Community Tech Tree and ModuleManager to function.
+This mod is a complete tech tree. It requires ModuleManager to function. Any other installed tech trees (e.g. CTT, etc) will conflict with this mod.
 
 It also requires mods to support it for their parts to be added. There will be instructions for how to add support in a separate readme.
 
