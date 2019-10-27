@@ -37,13 +37,43 @@ Please note that translations are community-sourced and that I don't actually sp
 LICENSING
 =========
 
-CODE:
+--------------------------------
+Engineering Tech Tree Remastered
+--------------------------------
 
-The code in this pack is distributed under a Creative Commons Attribution-NonCommercial 4.0 International License (http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode).
+The contents of this pack are distributed under a Creative Commons Attribution-NonCommercial 4.0 International License (http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode).
 
 You are free to share and adapt the materials only for non-commercial purposes and when providing appropriate attribution. Any derivatives must be distributed under the same license.
 
-ART:
+--------------------------------
+Community Tech Tree
+--------------------------------
 
-The USI Icons are copyright All Rights Reserved by Bob Palmer (RoverDude) and are used by permission.
+CTT is published by forum user Nertea and distributed under a Creative Commons Attribution-NonCommercial 4.0 International License (http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode).
+
+All assets, configurations, and other items in this mod identified by "CTT" are part of the Community Tech Tree mod and redistributed under this license.
+
+More information on CTT can be found on its forum thread:
+https://forum.kerbalspaceprogram.com/index.php?/topic/90530-17x-community-tech-tree-april-15/
+
+The source documentation and code can be found on GitHub:
+https://github.com/ChrisAdderley/CommunityTechTree
+
+---------------------------------
+USI: Life Support
+---------------------------------
+
+USI is published by forum user RoverDude and is copyright 2016 by Robert Palmer. 
+
+Umbra Space Industries(tm), nor the name of this project may be used in a derivative work without permission.
+
+Configuration files and code are licensed under the GPL v3 license (included separately).
+
+Assets, including Models (*.mu) and Textures *.png/*.dds) are All Rights Reserved. The icon set distributed with this mod is used by permission and all rights are retained with the original owner.
+
+More information on USI: LS can be found on its forum thread:
+https://forum.kerbalspaceprogram.com/index.php?/topic/105202-17x-usi-life-support-050/
+
+The source documentation and code can be found on GitHub:
+https://github.com/UmbraSpaceIndustries/USI-LS
 
