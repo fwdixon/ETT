@@ -34,7 +34,8 @@ namespace RDNodeAnchorFixer {
         Func<Vector2, Vector2, RDNode.Anchor, IEnumerable<Vector2>> builder;
 
         if (link.parent.anchor == link.anchor)
-          throw new NotImplementedException("Link between same anchors are not supported.");
+          return new List<Vector2>();
+          //throw new NotImplementedException("Link between same anchors are not supported.");
         else if ((link.parent.anchor <= RDNode.Anchor.BOTTOM && link.anchor >= RDNode.Anchor.RIGHT)
           || (link.parent.anchor >= RDNode.Anchor.RIGHT && link.anchor <= RDNode.Anchor.BOTTOM))
           builder = this.BuildSingleCorner;
